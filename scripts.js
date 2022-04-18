@@ -89,8 +89,10 @@ function type_private_message(message){
 }
 
 function send(){
+    
     const text = document.querySelector(".input");
     let mensage = [];
+
     if (text.value !== ""){
         mensage = {
             from: username.name,
@@ -104,6 +106,19 @@ function send(){
 
     text.value = '';
 }
+
+/*-------------------------------BONUS - ENVIAR COM ENTER---------------------------------------- */
+
+
+document.addEventListener("keypress", function(e) {
+    if(e.key === "Enter") {
+    
+        const btn = document.querySelector(".button");
+      
+        btn.click();
+    
+    }
+});
 
 /*---------------------------------------------------------------------------------- */
 

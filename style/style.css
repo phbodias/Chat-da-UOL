@@ -90,6 +90,8 @@ input:focus {
     align-items: center;
     margin-bottom: 4px;
     padding: 0 19px;
+    flex-wrap: wrap;
+
 }
 
 .status{
@@ -112,7 +114,5 @@ input:focus {
         min-height: 60px;
     }
 
-    .input{
 
-    }
   }
