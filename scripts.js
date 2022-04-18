@@ -1,22 +1,4 @@
 /* Funções */
-axios.get('https://mock-api.driven.com.br/api/v6/uol')
-
-function gethour(){
-    const data = new Date();
-    let hour = formathour(data.getHours());
-    let minutes = formathour(data.getMinutes());
-    let seconds = formathour(data.getSeconds());
-    hour = `${hour}:${minutes}:${seconds}`;
-    return hour;
-}
-
-function formathour(hour){
-    if (hour < 10){
-        hour = `0${hour}`;
-    }
-    return hour;
-}
-
 
 function formathour2(message){
     time = parseInt(message.time.slice(0,2))-3;
@@ -35,9 +17,7 @@ function login (){
 }
 
 function loginSucess(resposta) {
-    let hour = "00:00:00";
     const ul = document.querySelector("ul");
-    ul.innerHTML += `<li class="status"> (${hour})&nbsp<strong>${username.name}</strong>&nbspentra na sala...</li>`
     const meuInterval = setInterval(logado, 5000);
     messages_send();
 }
