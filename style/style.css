@@ -143,14 +143,11 @@ input:focus {
 @media (max-width: 614px){
     .tela-entrada{
         height: 100%;
-        position: absolute;
-        left: calc(50vw - 130px);
+        margin-top: 15vh;
     }
-    .img_ent, .gif{
 
-        width: 130px;
-        margin-top: 70px;
-        margin-bottom: 20px;
+    .entrando{
+        margin-left: 30px;
     }
 
     .status, .message, .private_message{
@@ -158,7 +155,6 @@ input:focus {
         align-items: center;
         margin-bottom: 4px;
         padding: 0 19px;
-        flex-wrap: wrap;
         font-size: 25px;
     }
 
