@@ -24,7 +24,7 @@ function carregando(){
     tela = document.querySelector(".tela-entrada");
     tela.innerHTML += `
         <div class="gifff">
-            <img class="gif" src="/images/gif.gif" alt="">
+            <img class="gif" src="images/gif.gif" alt="">
             <div class="entrando">Entrando...</div>
         </div>
     `
