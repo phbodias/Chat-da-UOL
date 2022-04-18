@@ -34,7 +34,7 @@ function login (){
 }
 
 function loginSucess(resposta) {
-    let hour = gethour();
+    let hour = "00:00:00";
     const ul = document.querySelector("ul");
     ul.innerHTML += `<li class="status"> (${hour})&nbsp<strong>${username.name}</strong>&nbspentra na sala...</li>`
     const meuInterval = setInterval(logado, 5000);
@@ -107,7 +107,22 @@ function type_private_message(message){
     li.scrollIntoView(); 
 }
 
+function send(){
+    const text = document.querySelector(".input");
+    let mensage = [];
+    if (text.value !== ""){
+        mensage = {
+            from: username.name,
+            to: "Todos",
+            text: text.value,
+            type: "message"
+        }
 
+        const post = axios.post("https://mock-api.driven.com.br/api/v6/uol/messages", mensage);
+    }
+
+    text.value = '';
+}
 
 /*---------------------------------------------------------------------------------- */
 
