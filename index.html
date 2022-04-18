@@ -12,19 +12,15 @@
     <title>Projeto_05_batePapoUOL  </title>
 </head>
 <body>
-    <div class="topo">
-        <div class="topo-content">
-            <img src="images/logo.png" alt="">
-            <ion-icon name="people" class="icon"></ion-icon>
+    <div class="tela-entrada">
+        <img class="img_ent" src="/images/logo.png" alt="">
+        <div class="remove">
+            <input type="text" placeholder="Digite seu nome" class="input_ent" value="">
+            <button class="button_ent" onclick="tela_entrada()">Entrar</ion-icon></button>
         </div>
     </div>
-    <div class="content">
-        <ul></ul>
-    </div>
-    <div class="floor">
-        <input type="text" placeholder="Escreva aqui..." class="input" value="">
-        <button class="button" onclick="send()"><ion-icon name="paper-plane-outline"></ion-icon></button>
-    </div>
+
+    <div class="div-cega"></div>
 
     <script type="module" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>

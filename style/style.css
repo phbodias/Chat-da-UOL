@@ -91,7 +91,7 @@ input:focus {
     margin-bottom: 4px;
     padding: 0 19px;
     flex-wrap: wrap;
-
+    min-height: 40px;
 }
 
 .status{
@@ -106,6 +106,41 @@ input:focus {
     background-color: #FFDEDE;
 }
 
+.tela-entrada{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.img_ent, .gif{
+    width: 130px;
+    margin-top: 70px;
+    margin-bottom: 20px;
+}
+
+.remove{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.input_ent{
+    margin-top: 74px;
+    width: 261px;
+    height: 54px;
+    text-align: center;
+}
+
+.button_ent{
+    margin-top: 15px;
+    width: 109px;
+    height: 45px;
+    justify-content: center;
+}
+
+
 @media (max-width:614px){
     .topo, .floor{
         width: 100%;
@@ -114,5 +149,8 @@ input:focus {
         min-height: 60px;
     }
 
+    .floor{
+        padding: 10px;
+    }
+}
 
-  }
