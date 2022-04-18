@@ -1,4 +1,5 @@
 /* Funções */
+axios.get('https://mock-api.driven.com.br/api/v6/uol')
 
 function gethour(){
     const data = new Date();
