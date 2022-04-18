@@ -52,6 +52,17 @@ body{
     height: 70vh;
     position: fixed;
     margin-top: 15vh;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.content ul{
+    margin: 25px 0;
+    font-size: 14px;
+}
+
+.content li{
+    min-height: 40px;
 }
 
 .input{
@@ -62,9 +73,33 @@ body{
     font-weight: 400;
 }
 
+input:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+
 .button{
     background-color: #FFFFFF;
     border: none;
     font-size: 35px;
     margin-right: 10px;
+}
+
+.status, .message, .private_message{
+    display: flex;
+    align-items: center;
+    margin-bottom: 4px;
+    padding: 0 19px;
+}
+
+.status{
+    background-color: #DCDCDC;
+}
+
+.message{
+    background-color: #FFFFFF;
+}
+
+.private_message{
+    background-color: #FFDEDE;
 }
